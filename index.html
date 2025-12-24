@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"/>    
+    <script src="scripts.js" defer></script>
+    
+    <title>Lista de compras</title>
+</head>
+
+
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo quick list">
+    </header>
+    
+    <main>
+        <h1>Compras da semana</h1>
+        <form id="shopping-form">
+            <input type="text" id="item-input" placeholder="Adicione um item" required>
+            <button id="add-button" type="submit">Adicionar item</button>
+        </form>
+
+        <ul id="shopping-list">
+            <li class="item">
+                <div class="conteiner-item">
+                    <input class="check" type="checkbox">
+                    <span>Leite</span>
+                </div>
+                <i class="hgi-stroke hgi-delete-01 lixeira" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="alert-removed hidden">
+            <div class="conteiner-remove">
+                <i class="hgi-stroke hgi-alert-circle icon" aria-hidden="true"></i>
+                <span>O item foi removido da lista</span>
+            </div>
+            <button class="close">X</button>
+        </div>
+    </footer>
+</body>
+</html>
