@@ -42,6 +42,15 @@ addButton.addEventListener("click", () => {
     }
     )
 
+    const checkboxInput = itemContainer.querySelector(".check")
+    checkboxInput.addEventListener("change", () => {
+        if(checkboxInput.checked) {
+            span.style.textDecoration = "line-through"
+        } else {
+            span.style.textDecoration = "none"
+        }
+    })
+
     input.value = ""
 })
 
