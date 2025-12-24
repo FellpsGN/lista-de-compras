@@ -35,8 +35,6 @@ body {
 
     height: 90vh;
 
-    border: 1px solid red; /* Remover borda */
-
     margin: 2.5rem;
     
     background-color: var(--background-primary);
@@ -49,7 +47,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    border: 1px solid red; /* Remover borda */
 
     width: 63rem;
     gap: 4rem;
@@ -99,6 +96,8 @@ form button {
     border-radius: 1.2rem; 
 
     background-color: var(--always-white);
+
+    margin-bottom: 0.9rem;
 }
 
 .conteiner-item {
